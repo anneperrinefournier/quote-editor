@@ -1,24 +1,30 @@
-# README
+# Quote Editor Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is built using **Turbo Rails** following the tutorial from [hotrails.dev](https://www.hotrails.dev/turbo-rails/turbo-rails-tutorial-introduction). Below is the information needed to set up and run the application.
 
-Things you may want to cover:
+## Ruby Version
 
-* Ruby version
+- **Ruby**: 3.1.2 (or the version recommended in your project)
+- **Rails**: 7.x.x
 
-* System dependencies
+## System Dependencies
 
-* Configuration
+- **PostgreSQL** for the database
+- **esbuild** for JavaScript bundling
+- **Sass** for CSS pre-processing
 
-* Database creation
+## Configuration
 
-* Database initialization
+ **Clone the repository:**
 
-* How to run the test suite
+   ```bash
+   git clone https://github.com/anneperrinefournier/quote-editor.git
+   cd quote-editor```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+  **Install dependencies:**
 
-* ...
+  ```bash
+  Copier le code
+  bin/setup
+  This script will install Ruby gems and set up the database.```
