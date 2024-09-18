@@ -9,4 +9,6 @@
 #   end
 
 puts "\n== Seeding the database with fixtures =="
-system("bin/rails db:fixtures:load")
+# system("bin/rails db:fixtures:load")
+# more performant than the above line
+Rake::Task['db:fixtures:load'].invoke
