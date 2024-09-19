@@ -1,9 +1,8 @@
 require "application_system_test_case"
 
 class QuotesTest < ApplicationSystemTestCase
-
   setup do
-    @quote = quotes(:first) # Reference to the first fixture quote
+    @quote = Quote.ordered.first
   end
 
   test "Showing a quote" do
@@ -14,8 +13,6 @@ class QuotesTest < ApplicationSystemTestCase
   end
 
   test "Creating a new quote" do
-    # When we visit the Quotes#index page
-    # we expect to see a title with the text "Quotes"
     visit quotes_path
     assert_selector "h1", text: "Quotes"
 
